@@ -9,7 +9,11 @@ namespace GeometryLib.Shapes
     /// <summary>
     /// Абстрактный класс формы
     /// </summary>
-    public abstract class Shape
+    public abstract class Shape : IPrintable
     {
+        public virtual string Print()
+        {
+            return "Shape";
+        }
     }
 }
