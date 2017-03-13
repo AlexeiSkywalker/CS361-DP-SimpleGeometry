@@ -21,9 +21,14 @@ namespace GeometryLib.Shapes
         }
         public override string Print()
         {
+            
+            return String.Format($"Circle: radius = {this.Radius}, area = {this.GetArea()}");
+        }
+        public override double GetArea()
+        {
             double area = 0;
             area = this.Radius * this.Radius * Math.PI;
-            return String.Format($"Circle: radius = {this.Radius}, area = {area}");
+            return area;
         }
     }
 }

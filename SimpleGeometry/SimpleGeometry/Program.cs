@@ -16,12 +16,10 @@ namespace SimpleGeometry
             shapes.Add(new Circle(1));
             shapes.Add(new Triangle(6, 5, 4));
             shapes.Add(new RightAngledTriangle(3, 4));
+            shapes.Add(new Square(10));
 
             foreach (Shape shape in shapes)
                 ShapePrinter.Print(shape);
-
-            Console.WriteLine("Для завершения нажмите любую клавишу...");
-            Console.ReadKey();
         }
     }
 }
